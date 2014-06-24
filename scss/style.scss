@@ -1,2 +1,23 @@
+/*
+	Theme Name: Genesass
+	Description: A Genesis SASS child theme based on genesis-sample
+	Author: Rusty Eddy
+	Author URI: http://demo.lakeparkonline.com/genesass
+	Version: 0.1
+ 
+	Tags: black, orange, white, one-column, two-columns, three-columns, fixed-width, custom-menu, full-width-template, sticky-post, theme-options, threaded-comments, translation-ready
+ 
+	Template: genesis
+	Template Version: 2.1.0-dev
+ 
+	License: GPL-2.0+
+	License URI: http://www.opensource.org/licenses/gpl-license.php
+*/
 
+/*
+ * Let's get this party started!
+ */
 @import 'genesis';
+@import 'bourbon/bourbon';
+@import 'neat/neat';
+
