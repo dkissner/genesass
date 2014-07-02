@@ -53,4 +53,25 @@ function gs_primary_navbar_above_header()
     add_action( 'genesis_before_header', 'genesis_do_nav' );
 }
 
+/**
+ * TODO: Create a post about this
+ */
+function gs_replace_genesis_loop( $new_loop_function )
+{
+	remove_action( 'genesis_loop', 'genesis_do_loop' );
+	add_action( 'genesis_loop', 'gsg_single_product_post' );
+}
+
+/**
+ * Force full width layout
+ *
+ * TODO: Force full width layout
+ */
+function gs_full_width_layout()
+{
+	add_filter( 'genesis_pre_get_option_site_layout',
+		'__genesis_return_full_width_content');
+}
+
+
 ?>
