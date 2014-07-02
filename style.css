@@ -1338,5 +1338,36 @@ li.comment {
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
+/*
+ * Sticky Menu Secondary Navigation
+ *
+ * To use the secondary sticky menu, make sure you are 
+ * calling 
+ * 
+ *    gs_do_secondary_sticky_menu()
+ *
+ * in your lib/options.php file.
+ *
+ * And @import this file into style.scss in this directory
+ *
+ * Finally be sure you have defined a secondary menu
+ */
+.nav-secondary {
+  background-color: #333333;
+  display: none;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999; }
+
+.nav-secondary .sticky-right {
+  float: right; }
+
+@media only screen and (max-width: 767px) {
+  .nav-secondary .sticky-right {
+    float: none; } }
 body {
   background: #d2d2d2; }
+
+.nav-primary {
+  background: #333333; }

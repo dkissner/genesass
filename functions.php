@@ -24,3 +24,6 @@ add_theme_support( 'custom-background' );
 
 //* Add support for 3-column footer widgets
 add_theme_support( 'genesis-footer-widgets', 3 );
+
+// Now set the options you'd like to turn on.
+require_once 'lib/options.php';

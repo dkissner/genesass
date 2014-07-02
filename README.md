@@ -41,3 +41,12 @@ I have basically moved the genesis-sample/style.css into the scss directory and 
 I can then overwrite the default stylings for specific selectors with my own custom styles.
 
 The idea is that I can update newer genesis-sample stylesheets with out having to rewrite them everytime.  This is not the most efficient what to handle stylesheets, but it should help future proof this code.
+
+Sticky Secondary Menu
+---------------------
+
+You can add a sticky secondary menu by calling the function 
+
+```
+gs_do_secondary_sticky_menu();
+```

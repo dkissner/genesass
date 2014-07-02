@@ -21,8 +21,14 @@
 @import 'bourbon/bourbon';
 @import 'neat/neat';
 
-@import 'colors_fonts';
+@import 'colors-fonts';
+@import 'secondary-sticky-menu';
 
 body {
 	background: $color-background;
+}
+
+.nav-primary
+{
+	background: $color-navbar;
 }
