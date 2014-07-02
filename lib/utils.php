@@ -29,6 +29,28 @@ function gs_do_secondary_sticky_menu()
     add_action( 'genesis_before', 'genesis_do_subnav' );
 }
 
+/**
+ * Load up font-awesome
+ * -----------------------------------------------------------------------------
+ */
+function gs_load_font_awesome()
+{
+   	//* Make Font Awesome available
+	add_action( 'wp_enqueue_scripts', 'enqueue_font_awesome' );
+    function enqueue_font_awesome() {
+        wp_enqueue_style( 'font-awesome',
+          '//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css' );
+    }
+}
 
+/**
+ * Move primary navbar above header
+ */
+function gs_primary_navbar_above_header()
+{
+   	//* Reposition the primary navigation menu
+    remove_action( 'genesis_after_header', 'genesis_do_nav' );
+    add_action( 'genesis_before_header', 'genesis_do_nav' );
+}
 
 ?>
