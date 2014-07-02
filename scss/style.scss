@@ -21,3 +21,8 @@
 @import 'bourbon/bourbon';
 @import 'neat/neat';
 
+@import 'colors_fonts';
+
+body {
+	background: $color-background;
+}
