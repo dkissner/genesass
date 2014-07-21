@@ -2,7 +2,7 @@
 /*
  * XXX watch out for a file name conflict!  Or call with absolute path
  */
-require_once 'utils.php';
+require_once 'lib/utils.php';
 
 /*
  * Load up the fonts we want, we'll use Google Fonts
@@ -25,6 +25,6 @@ gs_load_font_awesome();
  * Comment this out if you do NOT want your entry titles to become 
  * large banner under your header.
  */
-require_once 'entry-title-banner.php';
+require_once 'lib/entry-title-banner.php';
 
 ?>

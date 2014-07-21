@@ -120,9 +120,9 @@ input[type="search"] {
 --------------------------------------------- */
 
 body {
-	background-color: #f5f5f5;
-	color: #333;
-	font-family: Lato, sans-serif;
+	background-color: $base-background-color;  // From base/_variables.scss
+	color: $base-font-color;
+	font-family: $base-font-family;
 	font-size: 18px;
 	font-weight: 300;
 	line-height: 1.625;

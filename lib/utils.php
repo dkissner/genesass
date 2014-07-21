@@ -49,7 +49,7 @@ function gs_load_font_awesome()
 function gs_load_google_fonts( $label, $family )
 {
     $familystr = "//fonts.googleapis.com/css?family=" . $family;
-    wp_enqueue_style( $label, $family, array(), CHILD_THEME_VERSION );
+    wp_enqueue_style( $label, $familystr, array(), CHILD_THEME_VERSION );
 }
 
 /**
