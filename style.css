@@ -8,8 +8,7 @@
 	Tags: black, orange, white, one-column, two-columns, three-columns, fixed-width, custom-menu, full-width-template, sticky-post, theme-options, threaded-comments, translation-ready
  
 	Template: genesis
-	Template Version: 2.1.0-dev
- 
+	Template Version: 2.1.0-devi
 	License: GPL-2.0+
 	License URI: http://www.opensource.org/licenses/gpl-license.php
 */
@@ -1869,7 +1868,7 @@ li.comment {
  */
 /* line 15, scss/genesass/_secondary-sticky-menu.scss */
 .nav-secondary {
-  background-color: #333333;
+  background-color: #f2f2f2;
   display: none;
   position: fixed;
   top: 0;
@@ -1884,10 +1883,69 @@ li.comment {
   /* line 29, scss/genesass/_secondary-sticky-menu.scss */
   .nav-secondary .sticky-right {
     float: none; } }
-/* line 30, scss/style.scss */
-body {
-  background: #d2d2d2; }
+/**
+ * This file has all the styling used by the entry-title-banners
+ * If you are not using them you can remove this from style.scss
+ */
+/**
+ * Move the entry title just under the navbar and give it a 
+ * cool background color to set it apart.
+ */
+/**
+ * These are for custom headers
+ */
+/* line 29, scss/genesass/_entry-title-banner.scss */
+header.entry-title.c404 {
+  background: #f76c37;
+  background-color: #ffc051;
+  background-image: -webkit-radial-gradient(#ffc051, #f76c37);
+  background-image: radial-gradient(  #ffc051, #f76c37);
+  border-bottom: 1px solid black; }
+/* line 34, scss/genesass/_entry-title-banner.scss */
+header.entry-title.genesis-entry-title {
+  background-color: red;
+  background-image: -webkit-radial-gradient(red, #b30000);
+  background-image: radial-gradient(  red, #b30000);
+  border-bottom: 1px solid #d90000; }
+/* line 38, scss/genesass/_entry-title-banner.scss */
+header.entry-title.entry-title-image {
+  background: white;
+  padding: 0 0 0 0;
+  max-height: 300px;
+  overflow: hidden; }
 
-/* line 34, scss/style.scss */
+/**
+ * These stylings are for the defaults
+ */
+/* line 49, scss/genesass/_entry-title-banner.scss */
+header.entry-title {
+  padding: 30px 0;
+  background-color: #f7f7f7;
+  background-image: -webkit-radial-gradient(#f7f7f7, #d1d1d1);
+  background-image: radial-gradient(  #f7f7f7, #d1d1d1);
+  border-bottom: 1px solid #e4e4e4; }
+  /* line 53, scss/genesass/_entry-title-banner.scss */
+  header.entry-title h1 {
+    max-width: 800;
+    margin: 0 auto;
+    color: black;
+    font-size: 1.1em;
+    margin-bottom: 0;
+    text-align: center; }
+  /* line 61, scss/genesass/_entry-title-banner.scss */
+  header.entry-title h2 {
+    max-width: 800;
+    margin: 0 auto;
+    color: white;
+    font-family: "Open+Sans, sans";
+    font-size: .8em;
+    margin-top: 20px;
+    text-align: center; }
+
+/* line 29, scss/style.scss */
+body {
+  background: white; }
+
+/* line 33, scss/style.scss */
 .nav-primary {
-  background: #333333; }
+  background: #f2f2f2; }
