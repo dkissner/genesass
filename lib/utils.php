@@ -45,6 +45,7 @@ function gs_load_font_awesome()
 
 /**
  * Move primary navbar above header
+ * -----------------------------------------------------------------------------
  */
 function gs_primary_navbar_above_header()
 {
@@ -54,23 +55,37 @@ function gs_primary_navbar_above_header()
 }
 
 /**
- * TODO: Create a post about this
+ * Replace the genesis loop with our own custom loop
+ *
+ * TODO: Understand the genesis custom loop and why or when we may want
+ * to use that.
+ * -----------------------------------------------------------------------------
  */
 function gs_replace_genesis_loop( $new_loop_function )
 {
 	remove_action( 'genesis_loop', 'genesis_do_loop' );
-	add_action( 'genesis_loop', 'gsg_single_product_post' );
+	add_action( 'genesis_loop', $new_loop_function );
 }
 
 /**
  * Force full width layout
- *
- * TODO: Force full width layout
+ * -----------------------------------------------------------------------------
  */
 function gs_full_width_layout()
 {
 	add_filter( 'genesis_pre_get_option_site_layout',
 		'__genesis_return_full_width_content');
+}
+
+/**
+ * Remove the entry title
+ * -----------------------------------------------------------------------------
+ */
+function gs_remove_entry_title()
+{
+    remove_action( 'genesis_entry_header', 'genesis_entry_header_markup_open', 5 );
+    remove_action( 'genesis_entry_header', 'genesis_entry_header_markup_close', 15 );
+    remove_action( 'genesis_entry_header', 'genesis_do_post_title' );
 }
 
 ?>

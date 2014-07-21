@@ -36,6 +36,15 @@ function gs_entry_title( $func ) {
     add_action( 'genesis_after_header', $func );
 }
 
+function gs_skip_entry_title()
+{
+	$skip = false;
+	if ( is_home() || is_front_page() ) {
+		$skip = true;
+	}
+	return $skip;
+}
+
 /**
  * This section of code will remove the entry title header from 
  * the entry itself and place it just below the header with a solid
@@ -44,11 +53,11 @@ function gs_entry_title( $func ) {
 gs_entry_title( 'gs_do_entry_title' );
 function gs_do_entry_title()
 {
-	echo "FOO";
 	/*
 	 * We do not want to modify the home or front page title, 
 	 */
-	if ( is_home() || is_front_page() ) {
+	$skip = gs_skip_entry_title();
+	if ( $skip ) {
 		return;
 	}
 
