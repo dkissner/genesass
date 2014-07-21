@@ -17,14 +17,15 @@
 /*
  * Let's get this party started!
  */
-@import 'genesis';
+@import 'settings';
+
 @import 'bourbon/bourbon';
+@import 'base/grid-settings';
 @import 'neat/neat';
+@import 'base/base';
 
-@import 'colors-fonts';
-
-// You only need this if your using the sticky menus
-@import 'secondary-sticky-menu';
+// Now import the Genesis settings
+@import 'genesass/genesass';
 
 body {
 	background: $color-background;

@@ -26,4 +26,4 @@ add_theme_support( 'custom-background' );
 add_theme_support( 'genesis-footer-widgets', 3 );
 
 // Now set the options you'd like to turn on.
-require_once 'lib/options.php';
+require_once 'lib/theme-options.php';
