@@ -13,12 +13,16 @@
  * Finally be sure you have defined a secondary menu
  */
 .nav-secondary {
-    background-color: $color-navbar;
+    background-color: $secondary-nav-background;
     display: none;
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 999;
+
+    a {
+        color: $secondary-nav-color;
+    }
 }
 
 .nav-secondary .sticky-right {

@@ -9,4 +9,15 @@ $color-highlight:	#e5554e;
 
 $color-background:  white;
 
-$color-navbar:		#f2f2f2;
+// Navbar colors
+$nav-font-size:				1em;
+$nav-background:			#333;
+$nav-color:					#fff;
+$nav-item-padding:			15px 24px;
+
+$primary-nav-background: 	$nav-background;
+$primary-nav-color:			$nav-color;
+
+$secondary-nav-background: 	$nav-background;
+$secondary-nav-color:		$nav-color;
+

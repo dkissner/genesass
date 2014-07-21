@@ -27,12 +27,3 @@
 // Now import the Genesis settings
 @import 'genesass/genesass';
 @import 'layout/layout';
-
-body {
-	background: $color-background;
-}
-
-.nav-primary
-{
-	background: $color-navbar;
-}
