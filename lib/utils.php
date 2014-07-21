@@ -44,6 +44,15 @@ function gs_load_font_awesome()
 }
 
 /**
+ * Load up some Google Fonts
+ */
+function gs_load_google_fonts( $label, $family )
+{
+    $familystr = "//fonts.googleapis.com/css?family=" . $family;
+    wp_enqueue_style( $label, $family, array(), CHILD_THEME_VERSION );
+}
+
+/**
  * Move primary navbar above header
  * -----------------------------------------------------------------------------
  */
