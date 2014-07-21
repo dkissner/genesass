@@ -3,11 +3,5 @@
  */
 
 // These are the default genesa 
-@import 'genesis';
+@import 'genesis-modified';
 @import 'genesis-mixins';
-
-// Comment this out if you're not using sticky menues
-@import 'secondary-sticky-menu';
-
-// Comment out if you do not want to use entry title banners
-@import 'entry-title-banner';
