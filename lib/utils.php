@@ -39,7 +39,7 @@ function gs_load_font_awesome()
 	add_action( 'wp_enqueue_scripts', 'enqueue_font_awesome' );
     function enqueue_font_awesome() {
         wp_enqueue_style( 'font-awesome',
-          '//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css' );
+          '//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css' );
     }
 }
 
@@ -72,6 +72,5 @@ function gs_full_width_layout()
 	add_filter( 'genesis_pre_get_option_site_layout',
 		'__genesis_return_full_width_content');
 }
-
 
 ?>
