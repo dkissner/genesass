@@ -14,10 +14,30 @@
 */
 
 /*
- * Let's get this party started!
- */
+	House Keeping
+	------------------------------------------------------------------------
+
+	Following is the table of contents for the SCSS directories:
+
+	- base: Bitters (why the name?) from the Bourbon.io project
+	- bourbon: The base of the bourbon project
+	- genesass: These are the stylings from genesis-sample, specific to genesis
+	- layout: Layout specific stylings (header, body, sidebar, navbar, etc)
+	- neat: the powerful Bourbon.io grid framework
+	- vendor: this is a collection of [overrides for 3rd party stylesheets]
+	  -- For example: normalize, gravity-forms, github gists, etc.
+
+	Now The Files:
+
+	_settings: This is a set of variables we want to use specifically for this project
+	style.css: This is the grand pubah, main controller and includer of all things.
+*/
+	
+// Let's get this party started!  Styled how we want..
 @import 'settings';
 
+
+// Including all of the Bourbon.io crew.
 @import 'vendor/normalize';
 @import 'bourbon/bourbon';
 @import 'base/grid-settings';
@@ -26,4 +46,6 @@
 
 // Now import the Genesis settings
 @import 'genesass/genesass';
+
+// Now we'll bring in all the layout elements
 @import 'layout/layout';
