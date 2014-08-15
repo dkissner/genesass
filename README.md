@@ -42,6 +42,11 @@ I can then overwrite the default stylings for specific selectors with my own cus
 
 The idea is that I can update newer genesis-sample stylesheets with out having to rewrite them everytime.  This is not the most efficient what to handle stylesheets, but it should help future proof this code.
 
+References:
+-----------
+
+* Brian Gardner [Code Snippets](http://briangardner.com/code/)
+
 Sticky Secondary Menu
 ---------------------
 
@@ -50,3 +55,14 @@ You can add a sticky secondary menu by calling the function
 ```
 gs_do_secondary_sticky_menu();
 ```
+
+Widget Area Above Header
+------------------------
+
+You can easily place a widget are above the header on your website by calling:
+
+```
+gs_add_widget_above_header();
+```
+
+This comes from the Man himself [Brian Gardner](http://briangardner.com/add-widget-area-site-header/).

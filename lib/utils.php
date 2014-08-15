@@ -97,4 +97,33 @@ function gs_remove_entry_title()
     remove_action( 'genesis_entry_header', 'genesis_do_post_title' );
 }
 
+/**
+ * Add widget area above the header.
+ *
+ * Styling can be found in scss/layout/_widget-above-header.scss, make sure
+ *
+ *    @import 'widget-above-header';
+ *
+ * Is uncommented in scss/layout/_layout.scss
+ */
+function gs_add_widget_above_header()
+{
+    $args = array(
+        'id'            => 'before-header',
+        'name'          => __( 'Before Header', 'Genesass' ),
+        'description'   => __( 'This is a widget area before the header', 'Genesass' )
+        );
+    genesis_register_sidebar ( $args );
+
+    add_action( 'genesis_before_header', 're_before_header_widget_area' );
+    function re_before_header_widget_area( $args ) {
+        $args = array(
+            'before'        => "<div class='before-header widget-area'><div class='wrap'>",
+            'after'         => "</div> <!-- before-header --> </div> <!-- wrap -->",
+            );
+
+        genesis_widget_area( 'before-header', $args );
+    }
+}
+
 ?>
