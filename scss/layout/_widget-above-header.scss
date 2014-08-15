@@ -1,0 +1,15 @@
+/*
+ * If you plan to are include a widget above the header make sure:
+ * 
+ * You uncommented the following:
+ *
+ * theme-options.php: 	gs_widget_area_above_header(); 
+ * layout.scss: 		@import 'widget-above-header';
+ */ 
+
+//* Make this as sexy as you like
+.before-header
+{
+	padding: 20px 0;
+	text-align: center;
+}
