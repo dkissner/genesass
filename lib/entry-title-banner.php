@@ -1,5 +1,9 @@
 <?php
 
+if ( ! class_exists('Acf') ) {
+	return;
+}
+
 require_once 'entry-title-banner-acf.php';
 
 /**
