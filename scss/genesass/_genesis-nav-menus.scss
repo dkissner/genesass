@@ -1,0 +1,179 @@
+// Genesis Nav Menus
+
+/**
+ * These selectors add fontawesome down ticks to menus with 
+ * sub-menus.
+ *
+ * Thanks to Sridhar Kathakam for this one!
+ */
+@mixin genesis-submenu-tick {
+	content: "\f107";
+	font-family: 'FontAwesome';
+	font-size: 1.2rem;
+	padding-left: 0.5rem;
+	speak: none;
+}
+
+@mixin genesis-submenu-ul-tick {
+	content: "\f105";
+	font-family: 'FontAwesome';
+	font-size: 1.2rem;
+	padding-left: 1rem;
+	speak: none;
+}
+
+.genesis-nav-menu {
+	clear: both;
+	font-size: $nav-font-size;
+	line-height: 1;
+	width: 100%;
+
+	&> .menu-item {
+		display: inline-block;
+		text-align: left;
+
+		a {
+			color: $nav-color;
+			display: block;
+			padding: $nav-item-padding;
+
+			&:hover {
+				color: $color-highlight;
+			}
+		}
+
+		.sub-menu {
+			left: -9999px;
+			opacity: 0;
+			position: absolute;
+			-webkit-transition: opacity .4s ease-in-out;
+			-moz-transition:    opacity .4s ease-in-out;
+			-ms-transition:     opacity .4s ease-in-out;
+			-o-transition:      opacity .4s ease-in-out;
+			transition:         opacity .4s ease-in-out;
+			width: 200px;
+			z-index: 99;
+
+			a {
+				background-color: $nav-background;
+				border: 1px solid #eee;
+				border-top: none;
+				font-size: 14px;
+				padding: 20px;
+				position: relative;
+				width: 200px;
+			}
+		}
+	}
+}
+
+.genesis-nav-menu .current-menu-item > a,
+.genesis-nav-menu .sub-menu .current-menu-item > a:hover {
+	color: $color-highlight;
+}
+
+.genesis-nav-menu .sub-menu .sub-menu {
+	margin: -55px 0 0 199px;
+}
+
+.genesis-nav-menu .menu-item:hover {
+	position: static;
+}
+
+.genesis-nav-menu .menu-item:hover > .sub-menu {
+	left: auto;
+	opacity: 1;
+}
+
+.genesis-nav-menu > .first > a {
+	padding-left: 0;
+}
+
+.genesis-nav-menu > .last > a {
+	padding-right: 0;
+}
+
+.genesis-nav-menu > .right {
+	color: #fff;
+	float: right;
+	list-style-type: none;
+	padding: 30px 0;
+}
+
+.genesis-nav-menu > .right > a {
+	display: inline;
+	padding: 0;
+}
+
+.genesis-nav-menu > .rss > a {
+	margin-left: 48px;
+}
+
+.genesis-nav-menu > .search {
+	padding: 10px 0 0;
+}
+
+/* ## Site Header Navigation
+--------------------------------------------- */
+
+.site-header .sub-menu {
+	border-top: 1px solid #eee;
+}
+
+.site-header .sub-menu .sub-menu {
+	margin-top: -56px;
+}
+
+.site-header .genesis-nav-menu li li {
+	margin-left: 0;
+}
+
+/* ## Primary Navigation
+--------------------------------------------- */
+
+.nav-primary {
+	background-color: $primary-nav-background;
+}
+
+.nav-primary .genesis-nav-menu a {
+	color: $primary-nav-color;
+}
+
+.nav-primary .genesis-nav-menu .sub-menu a {
+	color: $primary-nav-background;
+}
+
+.nav-primary .genesis-nav-menu a:hover,
+.nav-primary .genesis-nav-menu .current-menu-item > a,
+.nav-primary .genesis-nav-menu .sub-menu .current-menu-item > a:hover {
+	color: $color-highlight;
+}
+
+/* ## Secondary Navigation
+--------------------------------------------- */
+
+.nav-secondary {
+	background-color: $secondary-nav-background;
+}
+
+
+/**
+ * These selectors add fontawesome down ticks to menus with 
+ * sub-menus.
+ *
+ * Thanks to Sridhar Kathakam for this one!
+ */
+.genesis-nav-menu > .menu-item.menu-item-has-children > a:after {
+	@include genesis-submenu-tick;
+}
+
+ul.sub-menu li.menu-item-has-children > a:after {
+	@include genesis-submenu-ul-tick;	
+}
+
+#menu-header-nav {
+	a {
+		background-color: $header-nav-background;
+		color: $header-nav-color;
+	}
+}

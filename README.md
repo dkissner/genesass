@@ -66,3 +66,13 @@ gs_add_widget_above_header();
 ```
 
 This comes from the Man himself [Brian Gardner](http://briangardner.com/add-widget-area-site-header/).
+
+Nav Sub Menu Indicators
+-----------------------
+
+If you have included font-awesome you can also have your submenu's include _ticks_ that will indicate sub-menus.  
+
+See: (This article)[http://sridharkatakam.com/adding-nav-sub-menu-indicators-genesis-using-font-awesome/]
+
+This functionality is on by default.
+

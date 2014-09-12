@@ -1286,55 +1286,54 @@ img.alignright,
 ---------------------------------------------------------------------------------------------------- */
 /* line 857, scss/genesass/_genesis-modified.scss */
 .site-header {
-  background-color: #fff;
   min-height: 160px; }
 
-/* line 862, scss/genesass/_genesis-modified.scss */
+/* line 861, scss/genesass/_genesis-modified.scss */
 .site-header .wrap {
   padding: 40px 0; }
 
 /* ## Title Area
 --------------------------------------------- */
-/* line 869, scss/genesass/_genesis-modified.scss */
+/* line 868, scss/genesass/_genesis-modified.scss */
 .title-area {
   float: left;
   padding: 10px 0;
   width: 360px; }
 
-/* line 875, scss/genesass/_genesis-modified.scss */
+/* line 874, scss/genesass/_genesis-modified.scss */
 .header-full-width .title-area {
   width: 100%; }
 
-/* line 879, scss/genesass/_genesis-modified.scss */
+/* line 878, scss/genesass/_genesis-modified.scss */
 .site-title {
   font-size: 32px;
   font-weight: 400;
   line-height: 1.2; }
 
-/* line 885, scss/genesass/_genesis-modified.scss */
+/* line 884, scss/genesass/_genesis-modified.scss */
 .site-title a,
 .site-title a:hover {
   color: #333; }
 
-/* line 890, scss/genesass/_genesis-modified.scss */
+/* line 889, scss/genesass/_genesis-modified.scss */
 .header-image .site-title > a {
   background: url(images/logo.png) no-repeat left;
   float: left;
   min-height: 60px;
   width: 100%; }
 
-/* line 897, scss/genesass/_genesis-modified.scss */
+/* line 896, scss/genesass/_genesis-modified.scss */
 .site-description {
   font-size: 16px;
   font-weight: 300;
   line-height: 1.5; }
 
-/* line 903, scss/genesass/_genesis-modified.scss */
+/* line 902, scss/genesass/_genesis-modified.scss */
 .site-description,
 .site-title {
   margin-bottom: 0; }
 
-/* line 908, scss/genesass/_genesis-modified.scss */
+/* line 907, scss/genesass/_genesis-modified.scss */
 .header-image .site-description,
 .header-image .site-title {
   display: block;
@@ -1342,7 +1341,7 @@ img.alignright,
 
 /* ## Widget Area
 --------------------------------------------- */
-/* line 917, scss/genesass/_genesis-modified.scss */
+/* line 916, scss/genesass/_genesis-modified.scss */
 .site-header .widget-area {
   float: right;
   text-align: right;
@@ -1350,211 +1349,86 @@ img.alignright,
 
 /* # Site Navigation
 ---------------------------------------------------------------------------------------------------- */
-/* line 927, scss/genesass/_genesis-modified.scss */
-.genesis-nav-menu {
-  clear: both;
-  font-size: 1em;
-  line-height: 1;
-  width: 100%; }
-  /* line 933, scss/genesass/_genesis-modified.scss */
-  .genesis-nav-menu .menu-item {
-    display: inline-block;
-    text-align: left; }
-    /* line 937, scss/genesass/_genesis-modified.scss */
-    .genesis-nav-menu .menu-item a {
-      color: white;
-      display: block;
-      padding: 15px 24px; }
-      /* line 942, scss/genesass/_genesis-modified.scss */
-      .genesis-nav-menu .menu-item a:hover {
-        color: #e5554e; }
-    /* line 947, scss/genesass/_genesis-modified.scss */
-    .genesis-nav-menu .menu-item .sub-menu {
-      left: -9999px;
-      opacity: 0;
-      position: absolute;
-      -webkit-transition: opacity .4s ease-in-out;
-      -moz-transition: opacity .4s ease-in-out;
-      -ms-transition: opacity .4s ease-in-out;
-      -o-transition: opacity .4s ease-in-out;
-      transition: opacity .4s ease-in-out;
-      width: 200px;
-      z-index: 99; }
-      /* line 959, scss/genesass/_genesis-modified.scss */
-      .genesis-nav-menu .menu-item .sub-menu a {
-        background-color: #333333;
-        border: 1px solid #eee;
-        border-top: none;
-        font-size: 14px;
-        padding: 20px;
-        position: relative;
-        width: 200px; }
-
-/* line 972, scss/genesass/_genesis-modified.scss */
-.genesis-nav-menu .current-menu-item > a,
-.genesis-nav-menu .sub-menu .current-menu-item > a:hover {
-  color: #e5554e; }
-
-/* line 977, scss/genesass/_genesis-modified.scss */
-.genesis-nav-menu .sub-menu .sub-menu {
-  margin: -55px 0 0 199px; }
-
-/* line 981, scss/genesass/_genesis-modified.scss */
-.genesis-nav-menu .menu-item:hover {
-  position: static; }
-
-/* line 985, scss/genesass/_genesis-modified.scss */
-.genesis-nav-menu .menu-item:hover > .sub-menu {
-  left: auto;
-  opacity: 1; }
-
-/* line 990, scss/genesass/_genesis-modified.scss */
-.genesis-nav-menu > .first > a {
-  padding-left: 0; }
-
-/* line 994, scss/genesass/_genesis-modified.scss */
-.genesis-nav-menu > .last > a {
-  padding-right: 0; }
-
-/* line 998, scss/genesass/_genesis-modified.scss */
-.genesis-nav-menu > .right {
-  color: #fff;
-  float: right;
-  list-style-type: none;
-  padding: 30px 0; }
-
-/* line 1005, scss/genesass/_genesis-modified.scss */
-.genesis-nav-menu > .right > a {
-  display: inline;
-  padding: 0; }
-
-/* line 1010, scss/genesass/_genesis-modified.scss */
-.genesis-nav-menu > .rss > a {
-  margin-left: 48px; }
-
-/* line 1014, scss/genesass/_genesis-modified.scss */
-.genesis-nav-menu > .search {
-  padding: 10px 0 0; }
-
-/* ## Site Header Navigation
---------------------------------------------- */
-/* line 1021, scss/genesass/_genesis-modified.scss */
-.site-header .sub-menu {
-  border-top: 1px solid #eee; }
-
-/* line 1025, scss/genesass/_genesis-modified.scss */
-.site-header .sub-menu .sub-menu {
-  margin-top: -56px; }
-
-/* line 1029, scss/genesass/_genesis-modified.scss */
-.site-header .genesis-nav-menu li li {
-  margin-left: 0; }
-
-/* ## Primary Navigation
---------------------------------------------- */
-/* line 1036, scss/genesass/_genesis-modified.scss */
-.nav-primary {
-  background-color: #333333; }
-
-/* line 1040, scss/genesass/_genesis-modified.scss */
-.nav-primary .genesis-nav-menu a {
-  color: white; }
-
-/* line 1044, scss/genesass/_genesis-modified.scss */
-.nav-primary .genesis-nav-menu .sub-menu a {
-  color: #333333; }
-
-/* line 1048, scss/genesass/_genesis-modified.scss */
-.nav-primary .genesis-nav-menu a:hover,
-.nav-primary .genesis-nav-menu .current-menu-item > a,
-.nav-primary .genesis-nav-menu .sub-menu .current-menu-item > a:hover {
-  color: #e5554e; }
-
-/* ## Secondary Navigation
---------------------------------------------- */
-/* line 1057, scss/genesass/_genesis-modified.scss */
-.nav-secondary {
-  background-color: #333333; }
-
+/* Rusty: Moved to _genesis-nav-nav-menus */
 /* # Content Area
 ---------------------------------------------------------------------------------------------------- */
 /* ## Entries
 --------------------------------------------- */
-/* line 1068, scss/genesass/_genesis-modified.scss */
+/* line 934, scss/genesass/_genesis-modified.scss */
 .entry {
   margin-bottom: 40px;
   padding: 50px 60px; }
 
-/* line 1073, scss/genesass/_genesis-modified.scss */
+/* line 939, scss/genesass/_genesis-modified.scss */
 .content .entry {
   background-color: #fff; }
 
-/* line 1077, scss/genesass/_genesis-modified.scss */
+/* line 943, scss/genesass/_genesis-modified.scss */
 .entry-content ol,
 .entry-content ul {
   margin-bottom: 28px;
   margin-left: 40px; }
 
-/* line 1083, scss/genesass/_genesis-modified.scss */
+/* line 949, scss/genesass/_genesis-modified.scss */
 .entry-content ol > li {
   list-style-type: decimal; }
 
-/* line 1087, scss/genesass/_genesis-modified.scss */
+/* line 953, scss/genesass/_genesis-modified.scss */
 .entry-content ul > li {
   list-style-type: disc; }
 
-/* line 1091, scss/genesass/_genesis-modified.scss */
+/* line 957, scss/genesass/_genesis-modified.scss */
 .entry-content ol ol,
 .entry-content ul ul {
   margin-bottom: 0; }
 
-/* line 1096, scss/genesass/_genesis-modified.scss */
+/* line 962, scss/genesass/_genesis-modified.scss */
 .entry-content code {
   background-color: #333;
   color: #ddd; }
 
 /* ## Entry Meta
 --------------------------------------------- */
-/* line 1104, scss/genesass/_genesis-modified.scss */
+/* line 970, scss/genesass/_genesis-modified.scss */
 p.entry-meta {
   font-size: 16px;
   margin-bottom: 0; }
 
-/* line 1109, scss/genesass/_genesis-modified.scss */
+/* line 975, scss/genesass/_genesis-modified.scss */
 .entry-header .entry-meta {
   margin-bottom: 24px; }
 
-/* line 1113, scss/genesass/_genesis-modified.scss */
+/* line 979, scss/genesass/_genesis-modified.scss */
 .entry-footer .entry-meta {
   border-top: 2px solid #f5f5f5;
   padding-top: 24px; }
 
-/* line 1118, scss/genesass/_genesis-modified.scss */
+/* line 984, scss/genesass/_genesis-modified.scss */
 .entry-categories,
 .entry-tags {
   display: block; }
 
-/* line 1123, scss/genesass/_genesis-modified.scss */
+/* line 989, scss/genesass/_genesis-modified.scss */
 .entry-comments-link::before {
   content: "\2014";
   margin: 0 6px 0 2px; }
 
 /* ## Pagination
 --------------------------------------------- */
-/* line 1131, scss/genesass/_genesis-modified.scss */
+/* line 997, scss/genesass/_genesis-modified.scss */
 .pagination {
   clear: both;
   margin: 40px 0; }
 
-/* line 1136, scss/genesass/_genesis-modified.scss */
+/* line 1002, scss/genesass/_genesis-modified.scss */
 .adjacent-entry-pagination {
   margin-bottom: 0; }
 
-/* line 1140, scss/genesass/_genesis-modified.scss */
+/* line 1006, scss/genesass/_genesis-modified.scss */
 .archive-pagination li {
   display: inline; }
 
-/* line 1144, scss/genesass/_genesis-modified.scss */
+/* line 1010, scss/genesass/_genesis-modified.scss */
 .archive-pagination li a {
   background-color: #333;
   color: #fff;
@@ -1563,72 +1437,72 @@ p.entry-meta {
   font-size: 16px;
   padding: 8px 12px; }
 
-/* line 1153, scss/genesass/_genesis-modified.scss */
+/* line 1019, scss/genesass/_genesis-modified.scss */
 .archive-pagination li a:hover,
 .archive-pagination .active a {
   background-color: #e5554e; }
 
 /* ## Comments
 --------------------------------------------- */
-/* line 1161, scss/genesass/_genesis-modified.scss */
+/* line 1027, scss/genesass/_genesis-modified.scss */
 .comment-respond,
 .entry-comments,
 .entry-pings {
   background-color: #fff;
   margin-bottom: 40px; }
 
-/* line 1168, scss/genesass/_genesis-modified.scss */
+/* line 1034, scss/genesass/_genesis-modified.scss */
 .comment-respond,
 .entry-pings {
   padding: 40px 40px 16px; }
 
-/* line 1173, scss/genesass/_genesis-modified.scss */
+/* line 1039, scss/genesass/_genesis-modified.scss */
 .entry-comments {
   padding: 40px; }
 
-/* line 1177, scss/genesass/_genesis-modified.scss */
+/* line 1043, scss/genesass/_genesis-modified.scss */
 .comment-header {
   font-size: 16px; }
 
-/* line 1181, scss/genesass/_genesis-modified.scss */
+/* line 1047, scss/genesass/_genesis-modified.scss */
 li.comment {
   background-color: #f5f5f5;
   border: 2px solid #fff;
   border-right: none; }
 
-/* line 1187, scss/genesass/_genesis-modified.scss */
+/* line 1053, scss/genesass/_genesis-modified.scss */
 .comment-content {
   clear: both; }
 
-/* line 1191, scss/genesass/_genesis-modified.scss */
+/* line 1057, scss/genesass/_genesis-modified.scss */
 .comment-list li {
   margin-top: 24px;
   padding: 32px; }
 
-/* line 1196, scss/genesass/_genesis-modified.scss */
+/* line 1062, scss/genesass/_genesis-modified.scss */
 .comment-list li li {
   margin-right: -32px; }
 
-/* line 1200, scss/genesass/_genesis-modified.scss */
+/* line 1066, scss/genesass/_genesis-modified.scss */
 .comment-respond input[type="email"],
 .comment-respond input[type="text"],
 .comment-respond input[type="url"] {
   width: 50%; }
 
-/* line 1206, scss/genesass/_genesis-modified.scss */
+/* line 1072, scss/genesass/_genesis-modified.scss */
 .comment-respond label {
   display: block;
   margin-right: 12px; }
 
-/* line 1211, scss/genesass/_genesis-modified.scss */
+/* line 1077, scss/genesass/_genesis-modified.scss */
 .entry-comments .comment-author {
   margin-bottom: 0; }
 
-/* line 1215, scss/genesass/_genesis-modified.scss */
+/* line 1081, scss/genesass/_genesis-modified.scss */
 .entry-pings .reply {
   display: none; }
 
-/* line 1222, scss/genesass/_genesis-modified.scss */
+/* line 1088, scss/genesass/_genesis-modified.scss */
 .form-allowed-tags {
   background-color: #f5f5f5;
   font-size: 16px;
@@ -1636,22 +1510,22 @@ li.comment {
 
 /* # Sidebars
 ---------------------------------------------------------------------------------------------------- */
-/* line 1232, scss/genesass/_genesis-modified.scss */
+/* line 1098, scss/genesass/_genesis-modified.scss */
 .sidebar {
   font-size: 16px; }
 
-/* line 1236, scss/genesass/_genesis-modified.scss */
+/* line 1102, scss/genesass/_genesis-modified.scss */
 .sidebar li {
   border-bottom: 1px dotted #ddd;
   margin-bottom: 10px;
   padding-bottom: 10px; }
 
-/* line 1242, scss/genesass/_genesis-modified.scss */
+/* line 1108, scss/genesass/_genesis-modified.scss */
 .sidebar p:last-child,
 .sidebar ul > li:last-child {
   margin-bottom: 0; }
 
-/* line 1247, scss/genesass/_genesis-modified.scss */
+/* line 1113, scss/genesass/_genesis-modified.scss */
 .sidebar .widget {
   background-color: #fff;
   margin-bottom: 40px;
@@ -1659,62 +1533,62 @@ li.comment {
 
 /* # Footer Widgets
 ---------------------------------------------------------------------------------------------------- */
-/* line 1257, scss/genesass/_genesis-modified.scss */
+/* line 1123, scss/genesass/_genesis-modified.scss */
 .footer-widgets {
   background-color: #333;
   clear: both;
   padding-top: 40px; }
 
-/* line 1263, scss/genesass/_genesis-modified.scss */
+/* line 1129, scss/genesass/_genesis-modified.scss */
 .footer-widgets,
 .footer-widgets a {
   color: #999; }
 
-/* line 1268, scss/genesass/_genesis-modified.scss */
+/* line 1134, scss/genesass/_genesis-modified.scss */
 .footer-widgets input {
   border: 1px solid #333; }
 
-/* line 1272, scss/genesass/_genesis-modified.scss */
+/* line 1138, scss/genesass/_genesis-modified.scss */
 .footer-widgets a.button,
 .footer-widgets a:hover {
   color: #fff; }
 
-/* line 1277, scss/genesass/_genesis-modified.scss */
+/* line 1143, scss/genesass/_genesis-modified.scss */
 .footer-widgets li {
   border-bottom: 1px dotted #666;
   margin-bottom: 10px;
   padding-bottom: 10px; }
 
-/* line 1283, scss/genesass/_genesis-modified.scss */
+/* line 1149, scss/genesass/_genesis-modified.scss */
 .footer-widgets .widget {
   margin-bottom: 40px; }
 
-/* line 1287, scss/genesass/_genesis-modified.scss */
+/* line 1153, scss/genesass/_genesis-modified.scss */
 .footer-widgets p:last-child {
   margin-bottom: 0; }
 
-/* line 1291, scss/genesass/_genesis-modified.scss */
+/* line 1157, scss/genesass/_genesis-modified.scss */
 .footer-widgets-1,
 .footer-widgets-2,
 .footer-widgets-3 {
   width: 340px; }
 
-/* line 1297, scss/genesass/_genesis-modified.scss */
+/* line 1163, scss/genesass/_genesis-modified.scss */
 .footer-widgets-1 {
   margin-right: 60px; }
 
-/* line 1301, scss/genesass/_genesis-modified.scss */
+/* line 1167, scss/genesass/_genesis-modified.scss */
 .footer-widgets-1,
 .footer-widgets-2 {
   float: left; }
 
-/* line 1306, scss/genesass/_genesis-modified.scss */
+/* line 1172, scss/genesass/_genesis-modified.scss */
 .footer-widgets-3 {
   float: right; }
 
 /* # Site Footer
 ---------------------------------------------------------------------------------------------------- */
-/* line 1314, scss/genesass/_genesis-modified.scss */
+/* line 1180, scss/genesass/_genesis-modified.scss */
 .site-footer {
   background-color: #fff;
   font-size: 16px;
@@ -1722,36 +1596,36 @@ li.comment {
   padding: 40px 0;
   text-align: center; }
 
-/* line 1322, scss/genesass/_genesis-modified.scss */
+/* line 1188, scss/genesass/_genesis-modified.scss */
 .site-footer p {
   margin-bottom: 0; }
 
 /* # Media Queries
 ---------------------------------------------------------------------------------------------------- */
 @media only screen and (max-width: 1200px) {
-  /* line 1332, scss/genesass/_genesis-modified.scss */
+  /* line 1198, scss/genesass/_genesis-modified.scss */
   .site-inner,
   .wrap {
     max-width: 960px; }
 
-  /* line 1337, scss/genesass/_genesis-modified.scss */
+  /* line 1203, scss/genesass/_genesis-modified.scss */
   .content-sidebar-sidebar .content-sidebar-wrap,
   .sidebar-content-sidebar .content-sidebar-wrap,
   .sidebar-sidebar-content .content-sidebar-wrap {
     width: 740px; }
 
-  /* line 1343, scss/genesass/_genesis-modified.scss */
+  /* line 1209, scss/genesass/_genesis-modified.scss */
   .content,
   .site-header .widget-area {
     width: 620px; }
 
-  /* line 1348, scss/genesass/_genesis-modified.scss */
+  /* line 1214, scss/genesass/_genesis-modified.scss */
   .sidebar-content-sidebar .content,
   .sidebar-sidebar-content .content,
   .content-sidebar-sidebar .content {
     width: 400px; }
 
-  /* line 1354, scss/genesass/_genesis-modified.scss */
+  /* line 1220, scss/genesass/_genesis-modified.scss */
   .footer-widgets-1,
   .footer-widgets-2,
   .footer-widgets-3,
@@ -1759,16 +1633,16 @@ li.comment {
   .title-area {
     width: 300px; }
 
-  /* line 1362, scss/genesass/_genesis-modified.scss */
+  /* line 1228, scss/genesass/_genesis-modified.scss */
   .footer-widgets-1 {
     margin-right: 30px; } }
 @media only screen and (max-width: 960px) {
-  /* line 1370, scss/genesass/_genesis-modified.scss */
+  /* line 1236, scss/genesass/_genesis-modified.scss */
   .site-inner,
   .wrap {
     max-width: 800px; }
 
-  /* line 1375, scss/genesass/_genesis-modified.scss */
+  /* line 1241, scss/genesass/_genesis-modified.scss */
   .content,
   .content-sidebar-sidebar .content,
   .content-sidebar-sidebar .content-sidebar-wrap,
@@ -1785,21 +1659,21 @@ li.comment {
   .title-area {
     width: 100%; }
 
-  /* line 1392, scss/genesass/_genesis-modified.scss */
+  /* line 1258, scss/genesass/_genesis-modified.scss */
   .site-header .wrap {
     padding: 20px 5%; }
 
-  /* line 1396, scss/genesass/_genesis-modified.scss */
+  /* line 1262, scss/genesass/_genesis-modified.scss */
   .header-image .title-area {
     background-position: center top; }
 
-  /* line 1400, scss/genesass/_genesis-modified.scss */
+  /* line 1266, scss/genesass/_genesis-modified.scss */
   .genesis-nav-menu li,
   .site-header ul.genesis-nav-menu,
   .site-header .search-form {
     float: none; }
 
-  /* line 1406, scss/genesass/_genesis-modified.scss */
+  /* line 1272, scss/genesass/_genesis-modified.scss */
   .genesis-nav-menu,
   .site-description,
   .site-header .title-area,
@@ -1807,36 +1681,36 @@ li.comment {
   .site-title {
     text-align: center; }
 
-  /* line 1414, scss/genesass/_genesis-modified.scss */
+  /* line 1280, scss/genesass/_genesis-modified.scss */
   .genesis-nav-menu a,
   .genesis-nav-menu > .first > a,
   .genesis-nav-menu > .last > a {
     padding: 20px 16px; }
 
-  /* line 1420, scss/genesass/_genesis-modified.scss */
+  /* line 1286, scss/genesass/_genesis-modified.scss */
   .site-header .search-form {
     margin: 16px auto; }
 
-  /* line 1424, scss/genesass/_genesis-modified.scss */
+  /* line 1290, scss/genesass/_genesis-modified.scss */
   .genesis-nav-menu li.right {
     display: none; }
 
-  /* line 1428, scss/genesass/_genesis-modified.scss */
+  /* line 1294, scss/genesass/_genesis-modified.scss */
   .footer-widgets-1 {
     margin-right: 0; } }
 @media only screen and (max-width: 800px) {
-  /* line 1436, scss/genesass/_genesis-modified.scss */
+  /* line 1302, scss/genesass/_genesis-modified.scss */
   body {
     background-color: #fff;
     font-size: 16px; }
 
-  /* line 1441, scss/genesass/_genesis-modified.scss */
+  /* line 1307, scss/genesass/_genesis-modified.scss */
   .site-inner,
   .wrap {
     padding-left: 5%;
     padding-right: 5%; }
 
-  /* line 1447, scss/genesass/_genesis-modified.scss */
+  /* line 1313, scss/genesass/_genesis-modified.scss */
   .archive-description,
   .author-box,
   .comment-respond,
@@ -1847,11 +1721,11 @@ li.comment {
   .site-header {
     padding: 0; }
 
-  /* line 1458, scss/genesass/_genesis-modified.scss */
+  /* line 1324, scss/genesass/_genesis-modified.scss */
   .archive-pagination li a {
     margin-bottom: 4px; }
 
-  /* line 1462, scss/genesass/_genesis-modified.scss */
+  /* line 1328, scss/genesass/_genesis-modified.scss */
   .five-sixths,
   .four-sixths,
   .one-fourth,
@@ -1866,9 +1740,168 @@ li.comment {
     margin: 0;
     width: 100%; }
 
-  /* line 1477, scss/genesass/_genesis-modified.scss */
+  /* line 1343, scss/genesass/_genesis-modified.scss */
   .sidebar .widget.enews-widget {
     padding: 40px; } }
+/**
+ * These selectors add fontawesome down ticks to menus with 
+ * sub-menus.
+ *
+ * Thanks to Sridhar Kathakam for this one!
+ */
+/* line 25, scss/genesass/_genesis-nav-menus.scss */
+.genesis-nav-menu {
+  clear: both;
+  font-size: 1em;
+  line-height: 1;
+  width: 100%; }
+  /* line 31, scss/genesass/_genesis-nav-menus.scss */
+  .genesis-nav-menu > .menu-item {
+    display: inline-block;
+    text-align: left; }
+    /* line 35, scss/genesass/_genesis-nav-menus.scss */
+    .genesis-nav-menu > .menu-item a {
+      color: white;
+      display: block;
+      padding: 15px 24px; }
+      /* line 40, scss/genesass/_genesis-nav-menus.scss */
+      .genesis-nav-menu > .menu-item a:hover {
+        color: #e5554e; }
+    /* line 45, scss/genesass/_genesis-nav-menus.scss */
+    .genesis-nav-menu > .menu-item .sub-menu {
+      left: -9999px;
+      opacity: 0;
+      position: absolute;
+      -webkit-transition: opacity .4s ease-in-out;
+      -moz-transition: opacity .4s ease-in-out;
+      -ms-transition: opacity .4s ease-in-out;
+      -o-transition: opacity .4s ease-in-out;
+      transition: opacity .4s ease-in-out;
+      width: 200px;
+      z-index: 99; }
+      /* line 57, scss/genesass/_genesis-nav-menus.scss */
+      .genesis-nav-menu > .menu-item .sub-menu a {
+        background-color: #333333;
+        border: 1px solid #eee;
+        border-top: none;
+        font-size: 14px;
+        padding: 20px;
+        position: relative;
+        width: 200px; }
+
+/* line 70, scss/genesass/_genesis-nav-menus.scss */
+.genesis-nav-menu .current-menu-item > a,
+.genesis-nav-menu .sub-menu .current-menu-item > a:hover {
+  color: #e5554e; }
+
+/* line 75, scss/genesass/_genesis-nav-menus.scss */
+.genesis-nav-menu .sub-menu .sub-menu {
+  margin: -55px 0 0 199px; }
+
+/* line 79, scss/genesass/_genesis-nav-menus.scss */
+.genesis-nav-menu .menu-item:hover {
+  position: static; }
+
+/* line 83, scss/genesass/_genesis-nav-menus.scss */
+.genesis-nav-menu .menu-item:hover > .sub-menu {
+  left: auto;
+  opacity: 1; }
+
+/* line 88, scss/genesass/_genesis-nav-menus.scss */
+.genesis-nav-menu > .first > a {
+  padding-left: 0; }
+
+/* line 92, scss/genesass/_genesis-nav-menus.scss */
+.genesis-nav-menu > .last > a {
+  padding-right: 0; }
+
+/* line 96, scss/genesass/_genesis-nav-menus.scss */
+.genesis-nav-menu > .right {
+  color: #fff;
+  float: right;
+  list-style-type: none;
+  padding: 30px 0; }
+
+/* line 103, scss/genesass/_genesis-nav-menus.scss */
+.genesis-nav-menu > .right > a {
+  display: inline;
+  padding: 0; }
+
+/* line 108, scss/genesass/_genesis-nav-menus.scss */
+.genesis-nav-menu > .rss > a {
+  margin-left: 48px; }
+
+/* line 112, scss/genesass/_genesis-nav-menus.scss */
+.genesis-nav-menu > .search {
+  padding: 10px 0 0; }
+
+/* ## Site Header Navigation
+--------------------------------------------- */
+/* line 119, scss/genesass/_genesis-nav-menus.scss */
+.site-header .sub-menu {
+  border-top: 1px solid #eee; }
+
+/* line 123, scss/genesass/_genesis-nav-menus.scss */
+.site-header .sub-menu .sub-menu {
+  margin-top: -56px; }
+
+/* line 127, scss/genesass/_genesis-nav-menus.scss */
+.site-header .genesis-nav-menu li li {
+  margin-left: 0; }
+
+/* ## Primary Navigation
+--------------------------------------------- */
+/* line 134, scss/genesass/_genesis-nav-menus.scss */
+.nav-primary {
+  background-color: #333333; }
+
+/* line 138, scss/genesass/_genesis-nav-menus.scss */
+.nav-primary .genesis-nav-menu a {
+  color: white; }
+
+/* line 142, scss/genesass/_genesis-nav-menus.scss */
+.nav-primary .genesis-nav-menu .sub-menu a {
+  color: #333333; }
+
+/* line 146, scss/genesass/_genesis-nav-menus.scss */
+.nav-primary .genesis-nav-menu a:hover,
+.nav-primary .genesis-nav-menu .current-menu-item > a,
+.nav-primary .genesis-nav-menu .sub-menu .current-menu-item > a:hover {
+  color: #e5554e; }
+
+/* ## Secondary Navigation
+--------------------------------------------- */
+/* line 155, scss/genesass/_genesis-nav-menus.scss */
+.nav-secondary {
+  background-color: #333333; }
+
+/**
+ * These selectors add fontawesome down ticks to menus with 
+ * sub-menus.
+ *
+ * Thanks to Sridhar Kathakam for this one!
+ */
+/* line 166, scss/genesass/_genesis-nav-menus.scss */
+.genesis-nav-menu > .menu-item.menu-item-has-children > a:after {
+  content: "\f107";
+  font-family: 'FontAwesome';
+  font-size: 1.2rem;
+  padding-left: 0.5rem;
+  speak: none; }
+
+/* line 170, scss/genesass/_genesis-nav-menus.scss */
+ul.sub-menu li.menu-item-has-children > a:after {
+  content: "\f105";
+  font-family: 'FontAwesome';
+  font-size: 1.2rem;
+  padding-left: 1rem;
+  speak: none; }
+
+/* line 175, scss/genesass/_genesis-nav-menus.scss */
+#menu-header-nav a {
+  background-color: white;
+  color: #333333; }
+
 /*
  * Sticky Menu Secondary Navigation
  *
