@@ -9,8 +9,8 @@ require_once 'lib/utils.php';
  *
  * Don't get too crazy, this could slow things down.
  */
-gs_load_google_fonts( 'google-fonts-lato', 'Lato:300,700' );
-gs_load_google_fonts( 'google-fonts-open-sans', 'Open+Sans:400italic,700italic,400,700,800' );
+//gs_load_google_fonts( 'google-fonts-lato', 'Lato:300,700' );
+//gs_load_google_fonts( 'google-fonts-open-sans', 'Open+Sans:400italic,700italic,400,700,800' );
 
 // [Un]comment if you [don't] want sticky menus
 gs_do_secondary_sticky_menu();

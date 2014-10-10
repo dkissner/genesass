@@ -97,6 +97,18 @@ function gs_remove_entry_title()
     remove_action( 'genesis_entry_header', 'genesis_do_post_title' );
 }
 
+/** 
+ * Create a standard front page to start
+ */
+function gs_standard_front_page( $new_loop, $front_page_css = 'front-page' )
+{
+    gs_replace_genesis_loop( $new_loop );
+    gs_full_width_layout();
+    gs_remove_entry_title();
+
+    
+}
+
 /**
  * Add widget area above the header.
  *

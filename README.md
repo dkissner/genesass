@@ -88,6 +88,14 @@ This function will completely remove the entry title from the post or the page.
 gs_remove_entry_title()
 ```
 
+### Standard Front Page
+
+This is another function that simple calls three other convencience functions. 
+
+```
+gs_standard_front_page( $new_loop, $front_page_css = 'front-page' )
+```
+
 ### Sticky Secondary Menu
 
 You can add a sticky secondary menu by calling the function 
