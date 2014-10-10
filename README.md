@@ -32,7 +32,6 @@ sass --watch scss/style.css:style.css
 
 Or you can just do a one time conversion if you prefer.
 
-
 About the Genesis style.css
 ---------------------------
 
@@ -42,13 +41,54 @@ I can then overwrite the default stylings for specific selectors with my own cus
 
 The idea is that I can update newer genesis-sample stylesheets with out having to rewrite them everytime.  This is not the most efficient what to handle stylesheets, but it should help future proof this code.
 
-References:
------------
-
-* Brian Gardner [Code Snippets](http://briangardner.com/code/)
-
-Sticky Secondary Menu
+Convenience Functions
 ---------------------
+
+### Load Font Awesome
+
+Load font awesome from the bootstrap CDN
+
+```
+gs_load_fontawesome()
+````
+
+### Load Google Fonts
+
+Load Google fonts.  Provide a label and the font family string just as you would when calling enqueue.
+
+``` 
+gs_load_google_fonts( $label, $family )
+```
+
+### Make the page full width
+
+``` 
+gs_full_page_width()
+```
+
+### Move primary navbar above header
+
+```
+gs_primary_navbar_above_header()
+```
+
+### Replace Genesis Loop with a custom loop
+
+This function will remove the standard _genesis_loop()_ and replace it with a custom loop that you have defined.
+
+```
+gs_replace_genesis_loop ( $new_loop_function )
+```
+
+### Remove the entry title
+
+This function will completely remove the entry title from the post or the page. 
+
+```
+gs_remove_entry_title()
+```
+
+### Sticky Secondary Menu
 
 You can add a sticky secondary menu by calling the function 
 
@@ -76,3 +116,7 @@ See: (This article)[http://sridharkatakam.com/adding-nav-sub-menu-indicators-gen
 
 This functionality is on by default.
 
+References:
+-----------
+
+* Brian Gardner [Code Snippets](http://briangardner.com/code/)
