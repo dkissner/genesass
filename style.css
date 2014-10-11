@@ -2035,7 +2035,7 @@ header.entry-title {
     .front-page .site-inner .super-hero .super-hero-inner {
       display: block;
       margin: 0 auto;
-      height: 800px; }
+      height: 600px; }
     /* line 23, scss/layout/_super-hero.scss */
     .front-page .site-inner .super-hero .super-hero-overlay {
       position: relative;
@@ -2043,4 +2043,5 @@ header.entry-title {
       text-align: center; }
       /* line 28, scss/layout/_super-hero.scss */
       .front-page .site-inner .super-hero .super-hero-overlay h1 {
+        font-size: 80px;
         color: yellow; }

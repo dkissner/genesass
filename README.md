@@ -124,6 +124,15 @@ See: (This article)[http://sridharkatakam.com/adding-nav-sub-menu-indicators-gen
 
 This functionality is on by default.
 
+Super Hero
+----------
+
+Hero images have been around for quite a while, you know the big image along side of some form of CTA, button or optin box, etc.
+
+Lately these hero images have become large images spanning the complete background above the fold with the CTA, button or optin box on top of the image. 
+
+I like to call these the _Super Hero_ images.  This package has some php functions and corresponding style sheets to help you create some your own super hero image.
+
 References:
 -----------
 
