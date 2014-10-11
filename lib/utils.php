@@ -105,8 +105,6 @@ function gs_standard_front_page( $new_loop, $front_page_css = 'front-page' )
     gs_replace_genesis_loop( $new_loop );
     gs_full_width_layout();
     gs_remove_entry_title();
-
-    
 }
 
 /**

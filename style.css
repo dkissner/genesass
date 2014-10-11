@@ -1902,6 +1902,19 @@ ul.sub-menu li.menu-item-has-children > a:after {
   background-color: white;
   color: #333333; }
 
+/* line 3, scss/layout/_header.scss */
+.site-header {
+  min-height: 80px; }
+  /* line 6, scss/layout/_header.scss */
+  .site-header .wrap {
+    padding: 20px 0; }
+
+/* line 2, scss/layout/_navbars.scss */
+.genesis-nav-menu > .menu-item a {
+  color: #333;
+  display: block;
+  padding: 15px 24px; }
+
 /*
  * Sticky Menu Secondary Navigation
  *
@@ -2007,3 +2020,27 @@ header.entry-title {
 .before-header {
   padding: 20px 0;
   text-align: center; }
+
+/* line 5, scss/layout/_super-hero.scss */
+.front-page .site-inner {
+  max-width: 100%;
+  padding-top: 0; }
+  /* line 9, scss/layout/_super-hero.scss */
+  .front-page .site-inner .super-hero {
+    background: url("http://stuff.lakeparkonline.com/images/glasses-1440.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover; }
+    /* line 17, scss/layout/_super-hero.scss */
+    .front-page .site-inner .super-hero .super-hero-inner {
+      display: block;
+      margin: 0 auto;
+      height: 800px; }
+    /* line 23, scss/layout/_super-hero.scss */
+    .front-page .site-inner .super-hero .super-hero-overlay {
+      position: relative;
+      top: 100px;
+      text-align: center; }
+      /* line 28, scss/layout/_super-hero.scss */
+      .front-page .site-inner .super-hero .super-hero-overlay h1 {
+        color: yellow; }

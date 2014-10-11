@@ -1,0 +1,35 @@
+.front-page {
+
+	$max-wdith: 1440px;
+
+	.site-inner {
+		max-width: 100%;
+		padding-top: 0;
+
+		.super-hero {
+			$img: 'http://stuff.lakeparkonline.com/images/glasses-1440.jpg';
+
+			background: url( $img );
+			background-repeat: no-repeat;
+			background-position: top;
+			background-size: cover;
+
+			.super-hero-inner {
+				display: block;
+				margin: 0 auto;
+				height: 800px;
+			}
+
+			.super-hero-overlay {
+				position: relative;
+				top: 100px;
+				text-align: center;
+
+				h1 {
+					color: yellow;
+				}
+
+			}
+		}
+	}
+}
