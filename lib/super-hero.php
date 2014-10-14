@@ -1,13 +1,13 @@
 <?php
 
-function gs_super_hero( $html_overlay )
+function gs_super_hero( $overlaycb )
 {
 	?>
 
 	<div class='super-hero'>
 		<div class='super-hero-inner'>
 
-			<?php $html_overlay(); ?>
+			<?php $overlaycb(); ?>
 
 		</div> <!-- super-hero-inner -->
 	</div> <!-- super-hero -->

@@ -1,0 +1,12 @@
+.gf-modal
+{
+    .modal-button {
+        @include button(simple, green);
+    }
+}
+
+.gf-modal-form {
+    h1 {
+        text-align: center;
+    }
+ }
