@@ -74,7 +74,7 @@ function gs_load_bootstrap()
     }
 
     //* Make Font Awesome available
-    add_action( 'wp_enqueue_style', 'enqueue_bootstrap_css' );
+    add_action( 'wp_enqueue_scripts', 'enqueue_bootstrap_css' );
     add_action( 'wp_enqueue_scripts', 'enqueue_bootstrap_js' );
 }
 

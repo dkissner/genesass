@@ -13,7 +13,7 @@ require_once 'lib/utils.php';
 //gs_load_google_fonts( 'google-fonts-open-sans', 'Open+Sans:400italic,700italic,400,700,800' );
 
 // Load FULL bootstrap if you want
-// gs_load_bootstrap();
+gs_load_bootstrap();
 
 // [Un]comment if you [don't] want sticky menus
 gs_do_secondary_sticky_menu();
