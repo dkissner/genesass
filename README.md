@@ -44,6 +44,15 @@ The idea is that I can update newer genesis-sample stylesheets with out having t
 Convenience Functions
 ---------------------
 
+### Load up Bootstrap if you like
+
+```
+gs_load_bootstrap()
+```
+
+This will link to the entire bootstrap .css and js located on MaxCDN.  Pass it a parameter and have it load the
+version you passed in.
+
 ### Load Font Awesome
 
 Load font awesome from the bootstrap CDN
