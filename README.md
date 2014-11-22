@@ -57,7 +57,7 @@ change (or override) the settings in css, for example:
 <!-- Example rows of a user photo, name and twitter handle -->
 <div class='row'>
 	<div class='photo'>
-		<img src='' />
+		<img src='http://example.com/me.jpg' />
 	</div>
 
 	<div class='name'>
@@ -72,14 +72,12 @@ change (or override) the settings in css, for example:
 
 ```css
 /*
- *	Markup that will allow you to 
+ *	Markup that will turn the stacked divs into a single row
  */ 
 .row {
-	@include first;
-	...
-
 	.photo {
 		@include one-half;
+		@include first;
 	}
 
 	.name {
