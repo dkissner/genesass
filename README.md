@@ -41,6 +41,61 @@ I can then overwrite the default stylings for specific selectors with my own cus
 
 The idea is that I can update newer genesis-sample stylesheets with out having to rewrite them everytime.  This is not the most efficient what to handle stylesheets, but it should help future proof this code.
 
+Genesis Grid System as Mixins
+-----------------------------
+
+I have taken the standard Genesis grid classes and turned them into mixins.
+Why is that cool you ask?  Because, you can now add these mixins to any
+existing HTML structure you want.
+
+For example, if you have existing html that you can't or don't want to modify just to include the 'one-third first', 'one-half', etc. classes you can just
+change (or override) the settings in css, for example:
+
+```
+<!-- Example rows of a user photo, name and twitter handle -->
+<div class='row'>
+	<div class='photo'>
+		<img src='' />
+	</div>
+
+	<div class='name'>
+		Rusty Eddy
+	</div>
+
+	<div class='twitter-handle'>
+		@rustyeddy
+	</div>
+</div>
+
+/*
+ *	Markup that will allow you to 
+ */ 
+.row {
+	@include first;
+	...
+
+	.photo {
+		@include one-half;
+	}
+
+	.name {
+		@include one-fourth;
+	}
+
+	.twitter-handle {
+		@include one-fourth;
+	}
+}
+```
+
+If you decide you want to change the column widths or go to a single column
+with all divs stacked, just modify or remove the mixin accordingly.
+
+No need to re-edit the html.  This is especially cool when you have to futz with html TinyMCE.
+
+Pretty sweet huh?
+
+
 Convenience Functions
 ---------------------
 

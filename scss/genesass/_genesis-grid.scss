@@ -1,0 +1,66 @@
+/* ## Column Classes
+--------------------------------------------- */
+/* Link: http://twitter.github.io/bootstrap/assets/css/bootstrap-responsive.css */
+@mixin small-screen-grid(max-width: 800px )
+{
+	@media only screen and (max-width: $max-width ) {
+		margin: 0;
+		width: 100%;
+	}
+}
+
+@mixin left-margin
+{
+	float: left;
+	margin-left: 2.564102564102564%;
+
+	@include small-screen-grid;
+}
+
+@mixin one-half
+{
+	width: 48.717948717948715%;	
+	@include small-screen-grid;
+}
+
+@mixin one-third
+{
+	width: 31.623931623931625%;
+	@include small-screen-grid;
+}
+
+@mixin two-thirds
+{
+	width: 65.81196581196582%;
+	@include small-screen-grid;
+}
+
+@mixin one-fourth {
+	width: 23.076923076923077%;
+	@include small-screen-grid;
+}
+
+@mixin three-fourths {
+	width: 74.35897435897436%;
+	@include small-screen-grid;
+}
+
+@mixin one-sixth {
+	width: 14.52991452991453%;
+	@include small-screen-grid;
+}
+
+@mixin five-sixths {
+	width: 82.90598290598291%;
+	@include small-screen-grid;
+}
+
+@mixin first {
+	clear: both;
+	margin-left: 0;
+}
+
+.newrow {
+	@include first;
+}
+

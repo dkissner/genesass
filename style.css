@@ -83,6 +83,9 @@ Copy the contents of this file to the child theme. Do not use @import, as the CS
  *
  * Thanks to Sridhar Kathakam for this one!
  */
+/* ## Column Classes
+--------------------------------------------- */
+/* Link: http://twitter.github.io/bootstrap/assets/css/bootstrap-responsive.css */
 /*
  * Sticky Menu Secondary Navigation
  *
@@ -1056,6 +1059,15 @@ ul.sub-menu li.menu-item-has-children > a:after {
 #menu-header-nav a {
   background-color: ;
   color: ; }
+
+@mixin small-screen-grid(max-width: 800px ) {
+  @media only screen and (max-width: ) {
+    margin: 0;
+    width: 100%; } }
+
+.newrow {
+  clear: both;
+  margin-left: 0; }
 
 .site-header {
   min-height: 80px; }
