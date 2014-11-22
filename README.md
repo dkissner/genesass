@@ -8,21 +8,23 @@ Sassification
 
 I start using SASS, specifically SCSS a little while back and really like it.  In my head it fits much more closely with a _real programming language_ by supporting things like reusable pieces of code, mixins, variables.  It also allows you to structure your code in a _scoped_ manner making it much easier to read, share and maintian.
 
-### Anyone up for some Bourbon?
-
-I have also started using [Bourbon](http://bourbon.io), specifically I love the [neat](http://neat.bourbon.io/) grid layout framework.  I have not really gotten to [bitters](http://bitters.bourbon.io/) and [refils](http://refills.bourbon.io/) yet.. But in do time.
-
-Anyway, this framework includes Bourbon and Neat directly.
-
 You can find all of the style sheets in the 
 
 ```
 scss 
 ```
 
-Directory.  I highly recommend you edit the .scss style sheets then generate a new _style.css_ with the sass command.
+I highly recommend you edit the .scss files and then generate a new style.css, after all that is the point of going with scss in the first place, right?
 
-Yes that does mean you'll have to setup your system to generate sass stylesheets.  Sorry, but that's just the way it goes.. But it really is not too hard to do..
+## Getting Started
+
+### The easy way with wp-scss plugin
+
+The easiest way to get started is to load the 'wp-scss' plugin by Think Connect, and configure it such that you are compiling the /scss/ directory into the / directory (all directories are relative to the theme directory).
+
+### The whole enchilada
+
+Alternatively, you could also use the SASS compiler of your choice.  This may be necessary if you use an additional framework such as bourbon.  But setting up such an evironment isn't that hard.
 
 Convert the .scss to .css by running the following commands from the child theme directory:
 
