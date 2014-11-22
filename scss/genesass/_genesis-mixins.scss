@@ -1,4 +1,4 @@
-@mixin wrap($width:800) {
+@mixin wrap( $width: 1200px ) {
 	max-width: $width;
 	margin: 0 auto;
 }
