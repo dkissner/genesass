@@ -53,7 +53,7 @@ existing HTML structure you want.
 For example, if you have existing html that you can't or don't want to modify just to include the 'one-third first', 'one-half', etc. classes you can just
 change (or override) the settings in css, for example:
 
-```
+```html
 <!-- Example rows of a user photo, name and twitter handle -->
 <div class='row'>
 	<div class='photo'>
@@ -68,7 +68,9 @@ change (or override) the settings in css, for example:
 		@rustyeddy
 	</div>
 </div>
+```
 
+```css
 /*
  *	Markup that will allow you to 
  */ 
