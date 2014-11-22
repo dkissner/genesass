@@ -69,7 +69,6 @@ function gs_load_bootstrap()
     {
         wp_enqueue_script ('bootstrap-js', 
             'https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js'
-
             );
     }
 

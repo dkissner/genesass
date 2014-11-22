@@ -1,23 +1,32 @@
 // Colors for this website
-$color-first: 		red;
-$color-second:		green;
-$color-third:		blue;
-$color-highlight:	#e5554e;
+$color-primary:				red;
+$color-secondary:			green;
+$color-teriary:				blue;
+$color-highlight:			#e5554e;
 
 // Surrounding colors
-$color-background:  white;
+$color-background:  		white;
 
-// Navbar colors
+// Font Settings
+$font-base-size:			18px;
+$font-body-family:			"Open Sans", "Helvetica Neue", sans-serif;
+$font-header-family:		"Merriweather", serif;
+
+// Header settings
+$header-color:				white;
+$header-background:			black;
+
+// Nav bar settings
 $nav-font-size:				1em;
 $nav-background:			#333;
 $nav-color:					#fff;
 $nav-item-padding:			15px 24px;
 
-$primary-nav-background: 	$nav-background;
-$primary-nav-color:			$nav-color;
+$nav-primary-background: 	$nav-background;
+$nav-primary-color:			$nav-color;
 
-$secondary-nav-background: 	$nav-background;
-$secondary-nav-color:		$nav-color;
+$nav-secondary-background: 	$nav-background;
+$nav-secondary-color:		$nav-color;
 
-$header-nav-color:			#333;
-$header-nav-background:		#fff;
+$nav-header-color:			#333;
+$nav-header-background:		#fff;

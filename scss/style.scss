@@ -5,52 +5,17 @@
 	Author URI: http://demo.lakeparkonline.com/genesass
 	Version: 0.1
  
-	Tags: black, orange, white, one-column, two-columns, three-columns, fixed-width, custom-menu, full-width-template, sticky-post, theme-options, threaded-comments, translation-ready
- 
 	Template: genesis
 	Template Version: 2.1.0-devi
 	License: GPL-2.0+
 	License URI: http://www.opensource.org/licenses/gpl-license.php
 */
-
-/*
-	House Keeping
-	------------------------------------------------------------------------
-
-	Following is the table of contents for the SCSS directories:
-
-	- base: Bitters (why the name?) from the Bourbon.io project
-	- bourbon: The base of the bourbon project
-	- genesass: These are the stylings from genesis-sample, specific to genesis
-	- layout: Layout specific stylings (header, body, sidebar, navbar, etc)
-	- neat: the powerful Bourbon.io grid framework
-	- vendor: this is a collection of [overrides for 3rd party stylesheets]
-	  -- For example: normalize, gravity-forms, github gists, etc.
-
-	Now The Files:
-
-	_settings: This is a set of variables we want to use specifically for this project
-	style.css: This is the grand pubah, main controller and includer of all things.
-*/
 	
-// Let's get this party started!  Styled how we want..
-@import 'imports/imports';
 @import 'settings';
+@import 'mixins/mixins';
 
-// Including all of the Bourbon.io crew.
-@import 'vendor/normalize';
-@import 'bourbon/bourbon';
-@import 'base/grid-settings';
-@import 'neat/neat';
-@import 'base/base';
-
-// Now import the Genesis settings
+// This is all genesis specific stuff
 @import 'genesass/genesass';
 
-// Now for some lib stuff
-@import 'lib/lib';
-
-// Now we'll bring in all the layout elements
+// These are layouts that are not necessarily specific to genesis
 @import 'layout/layout';
-
-

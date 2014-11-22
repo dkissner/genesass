@@ -2,14 +2,14 @@
  * This file has all the styling used by the entry-title-banners
  * If you are not using them you can remove this from style.scss
  */
-@mixin title-darkener($start-color:#f7f7f7, $howmuch:15%) {
+@mixin title-darkener($start-color: #f7f7f7, $howmuch: 15%) {
 	$end-color: darken( $start-color, $howmuch );
    	@include radial-gradient( $start-color, $end-color );
 	border-bottom: 1px solid darken( $start-color, $howmuch / 2 );
 }
 
 @mixin title-background($start-color:#f7f7f7, $end-color:#d2d2d2) {
-   	@include radial-gradient( $start-color, $end-color );
+//   	@include radial-gradient( $start-color, $end-color );
 	border-bottom: 1px solid darken( $end-color, 80% );
 }
 
