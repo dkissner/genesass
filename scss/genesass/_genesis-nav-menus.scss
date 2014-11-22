@@ -33,7 +33,7 @@
 		text-align: left;
 
 		a {
-			color: $nav-color;
+			color: $nav-primary-color;
 			display: block;
 			padding: $nav-item-padding;
 
@@ -132,7 +132,7 @@
 --------------------------------------------- */
 
 .nav-primary {
-	background-color: $primary-nav-background;
+	background-color: $nav-primary-background;
 }
 
 .nav-primary .genesis-nav-menu a {
