@@ -211,8 +211,6 @@ Nav Sub Menu Indicators
 
 If you have included font-awesome you can also have your submenu's include _ticks_ that will indicate sub-menus.  
 
-See: (This article)[http://sridharkatakam.com/adding-nav-sub-menu-indicators-genesis-using-font-awesome/]
-
 This functionality is on by default.
 
 Super Hero
@@ -228,3 +226,6 @@ References:
 -----------
 
 * Brian Gardner [Code Snippets](http://briangardner.com/code/)
+* Sridhar Katakam [Sub menu ticks article](http://sridharkatakam.com/adding-nav-sub-menu-indicators-genesis-using-font-awesome/)
+* 
+
