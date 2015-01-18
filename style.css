@@ -86,6 +86,7 @@ Copy the contents of this file to the child theme. Do not use @import, as the CS
 /* ## Column Classes
 --------------------------------------------- */
 /* Link: http://twitter.github.io/bootstrap/assets/css/bootstrap-responsive.css */
+@import 'header';
 /*
  * Sticky Menu Secondary Navigation
  *
@@ -944,6 +945,16 @@ li.comment {
   .sidebar .widget.enews-widget {
     padding: 40px; } }
 
+.site-header {
+  background: black;
+  min-height: 0px; }
+  .site-header .wrap .nav-header a {
+    color: white;
+    min-height: 80px; }
+
+.site-header .wrap {
+  padding: 0 0; }
+
 .genesis-nav-menu {
   clear: both;
   font-size: 1em;
@@ -1076,11 +1087,6 @@ ul.sub-menu li.menu-item-has-children > a:after {
   clear: both;
   margin-left: 0; }
 
-.site-header {
-  min-height: 80px; }
-  .site-header .wrap {
-    padding: 20px 0; }
-
 .genesis-nav-menu > .menu-item a {
   color: #333;
   display: block;
@@ -1111,10 +1117,9 @@ ul.sub-menu li.menu-item-has-children > a:after {
   max-width: 100%;
   padding-top: 0; }
   .front-page .site-inner .super-hero {
-    background: url('http://stuff.lakeparkonline.com/images/glasses-1440.jpg');
-    background-repeat: no-repeat;
-    background-position: top;
-    background-size: cover; }
+    background: url('http://demo.lakeparkonline.com/wp-content/uploads/2014/07/G+S.png') no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100%; }
     .front-page .site-inner .super-hero .super-hero-inner {
       display: block;
       margin: 0 auto;

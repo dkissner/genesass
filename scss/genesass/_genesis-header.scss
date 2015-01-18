@@ -1,0 +1,20 @@
+.site-header {
+
+	background: black;
+	min-height: 0px;
+
+	.wrap {
+		.nav-header {
+			a {
+				color: white;
+				min-height: 80px;
+			}
+		}
+	}
+}
+
+
+.site-header .wrap {
+	padding: 0 0;
+}
+

@@ -1,7 +1,10 @@
 <?php
 
-require_once( 'lib/utils.php' );
-require_once( 'lib/super-hero.php' );
+/*
+    Template Name: Front Page
+*/
+require_once 'lib/utils.php';
+require_once 'lib/genesis-hacks.php';
 
 add_filter( 'body_class', 'gs_body_class' );
 function gs_body_class( $classes ) {
@@ -13,15 +16,17 @@ gs_standard_front_page( 'gs_custom_loop' );
 
 function gs_custom_loop()
 {
-	gs_super_hero( 'gs_super_hero_overlay' );
+	gs_super_hero();
 }
 
-function gs_super_hero_overlay()
+function gs_super_hero()
 {
 	?>
-	<div class='super-hero-overlay'>
-		<h1>Hello, World</h1>
-	</div>
+	<div class='super-hero'>
+		<div class='super-hero-inner'>
+
+		</div> <!-- super-hero-inner -->
+	</div> <!-- super-hero -->
 	<?php
 }
 

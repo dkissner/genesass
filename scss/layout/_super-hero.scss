@@ -7,12 +7,11 @@
 		padding-top: 0;
 
 		.super-hero {
-			$img: 'http://stuff.lakeparkonline.com/images/glasses-1440.jpg';
+			$img: 'http://demo.lakeparkonline.com/wp-content/uploads/2014/07/G+S.png';
 
-			background: url( $img );
-			background-repeat: no-repeat;
-			background-position: top;
+ 			background: url( $img ) no-repeat center center fixed;
 			background-size: cover;
+			min-height: 100%;
 
 			.super-hero-inner {
 				display: block;
