@@ -1,7 +1,5 @@
 <?php
-/*
- * XXX watch out for a file name conflict!  Or call with absolute path
- */
+
 require_once 'lib/utils.php';
 
 /*
@@ -13,10 +11,10 @@ require_once 'lib/utils.php';
 //gs_load_google_fonts( 'google-fonts-open-sans', 'Open+Sans:400italic,700italic,400,700,800' );
 
 // Load FULL bootstrap if you want
-gs_load_bootstrap();
+//require_once('lib/bootstrap.php');
 
 // [Un]comment if you [don't] want sticky menus
-gs_do_secondary_sticky_menu();
+//gs_do_secondary_sticky_menu();
 
 // Load font-awesome
 gs_load_font_awesome();
