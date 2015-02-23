@@ -83,3 +83,19 @@ function gs_add_widget_above_header()
         genesis_widget_area( 'before-header', $args );
     }
 }
+
+/**
+ * Replace the footer credits
+ */
+function gs_replace_footer_credits()
+{
+    remove_action( 'genesis_footer', 'genesis_do_footer' );
+    add_action( 'genesis_footer', 'gs_custom_footer' );
+    function gs_custom_footer() {
+
+       ?>
+       <p class='footer-copyright'>&copy Copyright, Eddy Consulting, LLC 2013 - 2015</p>
+       <p class='footer-site-by'>Site by <a href='http://LakeParkOnline.com/services'>Lake Park Online</a></p>
+       <?php
+   }
+}
